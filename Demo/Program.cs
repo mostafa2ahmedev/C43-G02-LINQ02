@@ -262,6 +262,57 @@ namespace Demo
 
             #endregion
 
+            #region LINQ - Set Operators
+            //1. Find the unique Category names from the Product List
+            //var uniqueCategories = ProductList
+            //      .Select(p => p.Category)
+            //      .Distinct()
+            //      .ToList();
+            ////2. Produce a sequence containing the unique first letter from both product and customer names.
+
+            //var uniqueFirstLetters = ProductList
+            //          .Select(p => p.ProductName[0])
+            //          .Union(CustomerList.Select(c => c.CustomerName[0]))
+            //          .Distinct()
+            //          .ToList();
+            ////3. Create one sequence that contains the common first letter from both product and customer names.
+            //var commonFirstLetters = ProductList
+            //          .Select(p => p.ProductName[0])
+            //          .Intersect(CustomerList.Select(c => c.CustomerName[0]))
+            //          .ToList();
+            ////4. Create one sequence that contains the first letters of product names that are not also first letters of customer names.
+            //var uniqueProductFirstLetters = ProductList
+            //          .Select(p => p.ProductName[0])
+            //          .Except(CustomerList.Select(c => c.CustomerName[0]))
+            //          .ToList();
+            ////5. Create one sequence that contains the last three characters in each name of all customers and products, including any duplicates.
+            //var lastThreeChars = ProductList
+            //          .Select(p => p.ProductName.Length >= 3 ? p.ProductName[^3..] : p.ProductName)
+            //          .Concat(CustomerList.Select(c => c.CustomerName.Length >= 3 ? c.CustomerName[^3..] : c.CustomerName))
+            //          .ToList();
+
+
+            #endregion
+
+            #region LINQ - Quantifiers
+            //  1.Determine if any of the words in dictionary_english.txt contain the substring 'ei'.
+            //var words = File.ReadAllLines("dictionary_english.txt");
+
+            //bool containsEi = words.Any(w => w.Contains("ei"));
+            ////2. Return a grouped list of products only for categories that have at least one product that is out of stock.
+            //var categoriesWithOutOfStock = ProductList
+            //           .Where(p => p.UnitsInStock == 0)
+            //           .GroupBy(p => p.Category)
+            //           .ToList();
+            ////3. Return a grouped list of products only for categories that have all of their products in stock.
+
+            //4.var categoriesFullyStocked = ProductList
+            //          .GroupBy(p => p.Category)
+            //          .Where(g => g.All(p => p.UnitsInStock > 0))
+            //          .ToList();
+
+            #endregion
+
 
         }
     }
