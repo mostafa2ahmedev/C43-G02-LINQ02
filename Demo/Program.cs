@@ -217,7 +217,51 @@ namespace Demo
 
             #endregion
 
-          
+            #region LINQ – Transformation Operators
+            //1. Return a sequence of just the names of a list of products.
+            //var productNames = ProductList
+            //    .Select(p => p.ProductName)
+            //    .ToList();
+
+            ////2. Produce a sequence of the uppercase and lowercase versions of each word in the original array (Anonymous Types).
+            //string[] wordss = { "aPPLE", "BlUeBeRrY", "cHeRry" };
+
+            //var transformedWords = wordss
+            //    .Select(w => new { Upper = w.ToUpper(), Lower = w.ToLower() })
+            //    .ToList();
+            ////3. Produce a sequence containing some properties of Products, including UnitPrice which is renamed to Price in the resulting type.
+            //var productSummary = ProductList
+            //     .Select(p => new { p.ProductName, Price = p.UnitPrice, p.UnitsInStock })
+            //    .ToList();
+            ////4. Determine if the value of int in an array matches its position in the array.
+
+            //int[] Arrr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            //var indexMatch = Arrr
+            //    .Select((num, index) => new { Index = index, Number = num, Match = num == index })
+            //    .ToList();
+            ////5. Returns all pairs of numbers from both arrays such that the number from numbersA is less than the number from numbersB.
+            //int[] numbersA = { 0, 2, 4, 5, 6, 8, 9 };
+            //int[] numbersB = { 1, 3, 5, 7, 8 };
+
+            //var numberPairs = from a in numbersA
+            //                  from b in numbersB
+            //                  where a < b
+            //                  select new { A = a, B = b };
+            ////6. Select all orders where the order total is less than 500.00.
+            //var smallOrders = CustomerList
+            //    .SelectMany(c => c.Orders)
+            //    .Where(o => o.Total < 500)
+            //     .ToList();
+
+            ////7. Select all orders where the order was made in 1998 or later.
+            //var recentOrders = CustomerList
+            //    .SelectMany(c => c.Orders)
+            //    .Where(o => o.OrderDate.Year >= 1998)
+            //    .ToList();
+
+            #endregion
+
 
         }
     }
