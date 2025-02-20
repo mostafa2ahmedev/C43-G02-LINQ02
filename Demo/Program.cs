@@ -167,6 +167,58 @@ namespace Demo
             #endregion
 
 
+            #region LINQ - Ordering Operators
+            //1. Sort a list of products by name
+            //var sortedProductsByName = ProductList
+            //  .OrderBy(p => p.ProductName)
+            //   .ToList();
+
+            ////2. Uses a custom comparer to do a case-insensitive sort of the words in an array
+            //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+            //var sortedWords = Arr
+            //    .OrderBy(word => word, StringComparer.OrdinalIgnoreCase)
+            //    .ToArray();
+            //3. Sort a list of products by units in stock from highest to lowest.
+            //var sortedProductsByStock = ProductList
+            //  .OrderByDescending(p => p.UnitsInStock)
+            //   .ToList();
+
+            //string[] Arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+            //4. Sort a list of digits, first by length of their name, and then alphabetically by the name itself.
+
+
+            //var sortedDigits = Arr
+            //    .OrderBy(word => word.Length)
+            //    .ThenBy(word => word)
+            //    .ToArray();
+
+            //   //5. Sort first by word length and then by a case-insensitive sort of the words in an array.
+            //   var sortedWordsByLengthThenAlpha = Arr
+            //        .OrderBy(word => word.Length)
+            //       .ThenBy(word => word, StringComparer.OrdinalIgnoreCase)
+            //        .ToArray();
+            //   //6. Sort a list of products, first by category, and then by unit price, from highest to lowest.
+            //   var sortedProductsByCategoryAndPrice = ProductList
+            //     .OrderBy(p => p.Category)
+            //.ThenByDescending(p => p.UnitPrice)
+            //.ToList();
+            //   //7. Sort first by word length and then by a case-insensitive descending sort of the words in an array.
+            //   var sortedWordsByLengthThenDescAlpha = Arr
+            //      .OrderBy(word => word.Length)
+            //       .ThenByDescending(word => word, StringComparer.OrdinalIgnoreCase)
+            //       .ToArray();
+            //   //8. Create a list of all digits in the array whose second letter is 'i' that is reversed from the order in the original array.
+            //   var filteredReversedDigits = Arr
+            //         .Where(word => word.Length > 1 && word[1] == 'i')
+            //        .Reverse()
+            //       .ToArray();
+
+
+            #endregion
+
+          
+
         }
     }
 }
