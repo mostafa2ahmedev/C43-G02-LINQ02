@@ -313,6 +313,29 @@ namespace Demo
 
             #endregion
 
+            #region LINQ – Grouping Operators
+            ////1. Use group by to partition a list of numbers by their remainder when divided by 5
+            //List<int> numbers = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+
+            //var groupedByRemainder = numbers
+            //    .GroupBy(n => n % 5)
+            //    .ToList();
+
+
+            ////2. Use group by to partition a list of words by their first letter (using dictionary_english.txt).
+            //var wwords = File.ReadAllLines("dictionary_english.txt");
+
+            //var groupedByFirstLetter = wwords
+            //    .GroupBy(w => w[0])
+            //    .ToList();
+            ////3. Group words that consist of the same characters together.
+            //string[] Arr = { "from", "salt", "earn", "last", "near", "form" };
+
+            //var groupedByAnagram = Arr
+            //    .GroupBy(w => string.Concat(w.OrderBy(c => c)))
+            //    .ToList();
+
+            #endregion
 
         }
     }
